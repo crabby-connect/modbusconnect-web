@@ -18,6 +18,17 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     id: 1,
+    title:
+      "Modbus Protocol Deep Dive: Understanding Frame Structure and Implementation",
+    excerpt:
+      "Comprehensive technical exploration of Modbus RTU, ASCII, and TCP protocols covering frame structures, CRC/LRC algorithms, and low-level implementation details.",
+    date: "2025-11-10",
+    readTime: "15 min read",
+    slug: "modbus-protocol-deep-dive",
+    category: "Technical Deep Dive",
+  },
+  {
+    id: 2,
     title: "Getting Started with Modbus Connect: A Complete Guide",
     excerpt:
       "Learn how to set up and use Modbus Connect for monitoring your industrial devices. Step-by-step tutorial for beginners.",
@@ -27,7 +38,7 @@ const blogPosts = [
     category: "Tutorial",
   },
   {
-    id: 2,
+    id: 3,
     title: "Understanding Modbus TCP/IP Protocol: A Beginner's Guide",
     excerpt:
       "Comprehensive introduction to Modbus TCP/IP protocol, how it works, and why it's essential for industrial automation.",
@@ -37,7 +48,7 @@ const blogPosts = [
     category: "Technical",
   },
   {
-    id: 3,
+    id: 4,
     title: "Modbus Connect v0.2.0 Release: What's New",
     excerpt:
       "Discover the latest features and improvements in Modbus Connect v0.2.0, including enhanced charting and performance optimizations.",

@@ -15,10 +15,12 @@ import {
   Mail,
   Copy,
 } from "lucide-react";
+import StructuredData from "./components/StructuredData";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <StructuredData />
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,24 +44,28 @@ export default function Home() {
               <Link
                 href="/features"
                 className="text-gray-600 hover:text-primary-600 transition"
+                title="Modbus Connect Features"
               >
                 Features
               </Link>
               <Link
-                href="#how-it-works"
+                href="/blog"
                 className="text-gray-600 hover:text-primary-600 transition"
+                title="Modbus Connect Blog"
               >
-                How It Works
+                Blog
               </Link>
               <Link
                 href="#pricing"
                 className="text-gray-600 hover:text-primary-600 transition"
+                title="Modbus Connect Pricing"
               >
                 Pricing
               </Link>
               <Link
                 href="/download"
                 className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition font-medium"
+                title="Download Modbus Connect Free"
               >
                 Download Free
               </Link>
@@ -69,7 +75,10 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <section
+        className="pt-32 pb-20 px-4 sm:px-6 lg:px-8"
+        aria-label="Hero section"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -78,7 +87,7 @@ export default function Home() {
                 <span>Free During Development</span>
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Modern Modbus Monitoring Made Simple
+                Modern Modbus TCP/IP Monitoring Made Simple
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Professional Modbus TCP/IP scanner and monitoring tool for
@@ -89,6 +98,8 @@ export default function Home() {
                 <Link
                   href="/download"
                   className="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-lg hover:bg-primary-700 transition font-medium text-lg group"
+                  title="Download Modbus Connect for Windows"
+                  aria-label="Download Modbus Connect free beta for Windows"
                 >
                   <Download className="w-5 h-5 mr-2" />
                   Download Free Beta
@@ -97,6 +108,7 @@ export default function Home() {
                 <Link
                   href="#features"
                   className="inline-flex items-center justify-center border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg hover:border-primary-600 hover:text-primary-600 transition font-medium text-lg"
+                  title="Learn more about Modbus Connect features"
                 >
                   Learn More
                 </Link>
@@ -159,11 +171,18 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 bg-gray-50">
+      <section
+        id="features"
+        className="py-20 bg-gray-50"
+        aria-labelledby="features-heading"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Everything You Need
+            <h2
+              id="features-heading"
+              className="text-4xl font-bold text-gray-900 mb-4"
+            >
+              Modbus Monitoring Features
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Powerful features designed for industrial automation professionals
@@ -346,11 +365,18 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="py-20">
+      <section
+        id="how-it-works"
+        className="py-20"
+        aria-labelledby="how-it-works-heading"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              How It Works
+            <h2
+              id="how-it-works-heading"
+              className="text-4xl font-bold text-gray-900 mb-4"
+            >
+              How Modbus Connect Works
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Get started in minutes with our intuitive workflow
@@ -401,11 +427,18 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 bg-gray-50">
+      <section
+        id="pricing"
+        className="py-20 bg-gray-50"
+        aria-labelledby="pricing-heading"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Simple Pricing
+            <h2
+              id="pricing-heading"
+              className="text-4xl font-bold text-gray-900 mb-4"
+            >
+              Modbus Connect Pricing
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Get full access during development. Single license for production
@@ -492,10 +525,17 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50">
+      <section
+        id="contact"
+        className="py-20 bg-gray-50"
+        aria-labelledby="contact-heading"
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Get in Touch
+          <h2
+            id="contact-heading"
+            className="text-4xl font-bold text-gray-900 mb-6"
+          >
+            Contact Modbus Connect Support
           </h2>
           <p className="text-xl text-gray-600 mb-8">
             Have questions or feedback? I'd love to hear from you.
@@ -578,6 +618,11 @@ export default function Home() {
             <div>
               <h4 className="text-white font-semibold mb-4">Resources</h4>
               <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/blog" className="hover:text-white transition">
+                    Blog
+                  </Link>
+                </li>
                 <li>
                   <Link href="/docs" className="hover:text-white transition">
                     Documentation

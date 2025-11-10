@@ -1,6 +1,25 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Download, CheckCircle2, ArrowLeft, Monitor, Cpu } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Download Modbus Connect - Free Modbus TCP/IP Monitoring Software",
+  description:
+    "Download Modbus Connect free beta for Windows. Professional Modbus TCP/IP scanner and monitoring tool for industrial automation. 2.7 MB download, native performance, supports Windows 7/8/10/11.",
+  keywords:
+    "download Modbus software, Modbus TCP/IP tool download, free Modbus scanner, Windows Modbus monitoring, industrial automation software download, SCADA tool download, PLC monitoring software",
+  alternates: {
+    canonical: "https://modbusconnect.com/download",
+  },
+  openGraph: {
+    title: "Download Modbus Connect - Free Modbus TCP/IP Monitoring Software",
+    description:
+      "Download Modbus Connect free beta for Windows. Professional Modbus TCP/IP scanner and monitoring tool. 2.7 MB download, native performance.",
+    url: "https://modbusconnect.com/download",
+    type: "website",
+  },
+};
 
 export default function DownloadPage() {
   return (
@@ -33,7 +52,10 @@ export default function DownloadPage() {
       </nav>
 
       {/* Download Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section
+        className="py-20 px-4 sm:px-6 lg:px-8"
+        aria-label="Download section"
+      >
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center space-x-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -41,7 +63,7 @@ export default function DownloadPage() {
               <span>Free During Development</span>
             </div>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
-              Download Modbus Connect
+              Download Modbus Connect for Windows
             </h1>
             <p className="text-xl text-gray-600">
               Get started with the free beta. Available for Windows.
@@ -65,6 +87,8 @@ export default function DownloadPage() {
                 href="/downloads/Modbus Connect_0.2.0_x64-setup.exe"
                 className="w-full bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition font-medium flex items-center justify-center"
                 download
+                title="Download Modbus Connect v0.2.0 for Windows"
+                aria-label="Download Modbus Connect installer for Windows 64-bit"
               >
                 <Download className="w-5 h-5 mr-2" />
                 Download .exe
@@ -79,8 +103,11 @@ export default function DownloadPage() {
           <div className="bg-white rounded-xl p-8 shadow-sm mb-12">
             <div className="flex items-center justify-center mb-6">
               <Cpu className="w-6 h-6 text-primary-600 mr-3" />
-              <h2 className="text-2xl font-bold text-gray-900">
-                System Requirements
+              <h2
+                className="text-2xl font-bold text-gray-900"
+                id="system-requirements"
+              >
+                Modbus Connect System Requirements
               </h2>
             </div>
             <div className="text-center mb-6">

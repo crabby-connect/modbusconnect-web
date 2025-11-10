@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -10,6 +12,8 @@ import {
   CheckCircle2,
   ArrowRight,
   Download,
+  Mail,
+  Copy,
 } from "lucide-react";
 
 export default function Home() {
@@ -19,7 +23,10 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-3">
+            <a
+              href="#"
+              className="flex items-center space-x-3 hover:opacity-80 transition"
+            >
               <Image
                 src="/icon.png"
                 alt="Modbus Connect Logo"
@@ -30,7 +37,7 @@ export default function Home() {
               <span className="text-xl font-bold text-gray-900">
                 Modbus Connect
               </span>
-            </div>
+            </a>
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/features"
@@ -96,8 +103,13 @@ export default function Home() {
               </div>
               <p className="mt-6 text-sm text-gray-500">
                 By{" "}
-                <span className="font-semibold text-primary-600">Crabby</span>,
-                indie developer • Windows
+                <a
+                  href="#contact"
+                  className="font-semibold text-primary-600 hover:text-primary-700 transition"
+                >
+                  Crabby
+                </a>{" "}
+                - Made for Windows
               </p>
             </div>
             <div className="relative">
@@ -112,16 +124,32 @@ export default function Home() {
                 />
               </div>
               {/* Floating stats */}
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-green-600" />
+              <div className="absolute -bottom-6 -left-6">
+                <div className="relative">
+                  <div className="absolute -inset-[3px] rounded-xl overflow-hidden">
+                    <div className="electric-border-wrapper absolute inset-0">
+                      <div
+                        className="absolute inset-0"
+                        style={{
+                          background:
+                            "conic-gradient(from 0deg, rgba(250, 204, 21, 1) 0%, rgba(250, 204, 21, 0.8) 12.5%, rgba(250, 204, 21, 1) 25%, rgba(250, 204, 21, 0.8) 37.5%, rgba(250, 204, 21, 1) 50%, rgba(250, 204, 21, 0.8) 62.5%, rgba(250, 204, 21, 1) 75%, rgba(250, 204, 21, 0.8) 87.5%, rgba(250, 204, 21, 1) 100%)",
+                          filter: "blur(6px)",
+                        }}
+                      ></div>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xl font-bold text-gray-900">
-                      Unlimited Devices
-                    </p>
-                    <p className="text-sm text-gray-600">Lightning Speed</p>
+                  <div className="relative bg-white rounded-xl shadow-lg p-4 border border-gray-100">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                        <Zap className="w-6 h-6 text-green-600" />
+                      </div>
+                      <div>
+                        <p className="text-xl font-bold text-gray-900">
+                          Unlimited Devices
+                        </p>
+                        <p className="text-sm text-gray-600">Lightning Speed</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -460,6 +488,45 @@ export default function Home() {
             <Download className="w-5 h-5 mr-2" />
             Download Now
           </Link>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Get in Touch
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Have questions or feedback? I'd love to hear from you.
+          </p>
+          <div className="bg-white rounded-xl shadow-lg p-6 max-w-md mx-auto border border-gray-200">
+            <div className="flex items-center justify-between bg-gray-50 rounded-lg p-4 group">
+              <div className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-primary-600 flex-shrink-0" />
+                <code className="text-base text-gray-900 select-all">
+                  crabby@modbusconnect.com
+                </code>
+              </div>
+              <button
+                onClick={(e) => {
+                  navigator.clipboard.writeText("crabby@modbusconnect.com");
+                  const btn = e.currentTarget;
+                  const icon = btn.querySelector("svg");
+                  if (icon) {
+                    icon.classList.add("text-green-600");
+                    setTimeout(() => {
+                      icon.classList.remove("text-green-600");
+                    }, 2000);
+                  }
+                }}
+                className="p-2 hover:bg-gray-200 rounded-lg transition flex-shrink-0"
+                title="Copy email address"
+              >
+                <Copy className="w-5 h-5 text-gray-600 transition" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 

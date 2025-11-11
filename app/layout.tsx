@@ -64,6 +64,16 @@ export default function RootLayout({
         <link rel="canonical" href="https://modbusconnect.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        {/* Inline critical CSS for above-the-fold content */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              :root{--foreground-rgb:51,51,51;--background-start-rgb:248,249,250;--background-end-rgb:255,255,255}
+              body{color:rgb(var(--foreground-rgb));background:linear-gradient(to bottom,transparent,rgb(var(--background-end-rgb)))rgb(var(--background-start-rgb));margin:0;font-family:system-ui,-apple-system,sans-serif}
+              *{box-sizing:border-box}
+            `,
+          }}
+        />
       </head>
       <body className="antialiased">{children}</body>
     </html>

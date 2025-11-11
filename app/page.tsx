@@ -29,13 +29,16 @@ export default function Home() {
               href="#"
               className="flex items-center space-x-3 hover:opacity-80 transition"
             >
-              <Image
-                src="/icon.png"
-                alt="Modbus Connect Logo"
-                width={40}
-                height={40}
-                className="rounded-lg"
-              />
+              <picture>
+                <source srcSet="/icon-40.webp" type="image/webp" />
+                <img
+                  src="/icon-40.png"
+                  alt="Modbus Connect Logo"
+                  width={40}
+                  height={40}
+                  className="rounded-lg"
+                />
+              </picture>
               <span className="text-xl font-bold text-gray-900">
                 Modbus Connect
               </span>
@@ -126,14 +129,21 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
-                <Image
-                  src="/screenshots/main-dashboard.png"
-                  alt="Modbus Connect Main Dashboard - Device list, monitoring sessions, and real-time data"
-                  width={1920}
-                  height={1080}
-                  className="w-full h-auto"
-                  priority
-                />
+                <picture>
+                  <source
+                    srcSet="/screenshots/main-dashboard-640.webp 640w, /screenshots/main-dashboard-1024.webp 1024w, /screenshots/main-dashboard-1920.webp 1920w"
+                    type="image/webp"
+                    sizes="(max-width: 768px) 640px, (max-width: 1024px) 1024px, 1920px"
+                  />
+                  <img
+                    src="/screenshots/main-dashboard.png"
+                    alt="Modbus Connect Main Dashboard - Device list, monitoring sessions, and real-time data"
+                    width={1920}
+                    height={1080}
+                    className="w-full h-auto"
+                    loading="eager"
+                  />
+                </picture>
               </div>
               {/* Floating stats */}
               <div className="absolute -bottom-6 -left-6">
@@ -570,13 +580,16 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Image
-                  src="/icon.png"
-                  alt="Modbus Connect"
-                  width={32}
-                  height={32}
-                  className="rounded-lg"
-                />
+                <picture>
+                  <source srcSet="/icon-40.webp" type="image/webp" />
+                  <img
+                    src="/icon-40.png"
+                    alt="Modbus Connect"
+                    width={32}
+                    height={32}
+                    className="rounded-lg"
+                  />
+                </picture>
                 <span className="text-white font-bold">Modbus Connect</span>
               </div>
               <p className="text-sm">

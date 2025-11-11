@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import {
   Activity,
   Zap,
@@ -597,7 +596,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Product</h4>
+              <div className="text-white font-semibold mb-4">Product</div>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
@@ -623,7 +622,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Resources</h4>
+              <div className="text-white font-semibold mb-4">Resources</div>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="/blog" className="hover:text-white transition">
@@ -646,7 +645,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Legal</h4>
+              <div className="text-white font-semibold mb-4">Legal</div>
               <p className="text-sm">
                 Software provided as-is without warranty of any kind. Use at
                 your own risk.

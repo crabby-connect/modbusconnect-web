@@ -24,17 +24,18 @@ function processHtmlFiles(dir) {
         modified = true;
       }
 
-      // Defer non-critical CSS by loading it asynchronously
-      // This prevents CSS from blocking the initial render
-      const cssRegex = /<link([^>]*rel="stylesheet"[^>]*)>/g;
-      html = html.replace(cssRegex, (match, attrs) => {
-        // Add media="print" and onload handler to load CSS asynchronously
-        if (!attrs.includes("media=")) {
+      // Add preload hint for CSS to improve loading without blocking
+      if (html.includes('rel="stylesheet"')) {
+        const cssMatch = html.match(/href="([^"]*\.css)"/);
+        if (cssMatch && !html.includes('rel="preload"')) {
+          const cssPath = cssMatch[1];
+          html = html.replace(
+            '<link rel="stylesheet"',
+            `<link rel="preload" href="${cssPath}" as="style"><link rel="stylesheet"`
+          );
           modified = true;
-          return `<link${attrs} media="print" onload="this.media='all'"><noscript><link${attrs}></noscript>`;
         }
-        return match;
-      });
+      }
 
       if (modified) {
         fs.writeFileSync(filePath, html, "utf8");

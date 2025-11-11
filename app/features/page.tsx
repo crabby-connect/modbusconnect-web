@@ -17,9 +17,13 @@ export default function FeaturesPage() {
               className="flex items-center space-x-3 hover:opacity-80 transition"
             >
               <picture>
-                <source srcSet="/icon-40.webp" type="image/webp" />
+                <source
+                  srcSet="/icon-40.webp 1x, /icon-60.webp 1.5x"
+                  type="image/webp"
+                />
                 <img
                   src="/icon-40.png"
+                  srcSet="/icon-40.png 1x, /icon-60.png 1.5x"
                   alt="Modbus Connect Logo"
                   width={40}
                   height={40}

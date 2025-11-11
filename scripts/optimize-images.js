@@ -5,8 +5,10 @@ const path = require("path");
 async function optimizeImages() {
   const publicDir = path.join(__dirname, "..", "public");
 
-  // Optimize icon.png - create smaller versions
+  // Optimize icon.png - create smaller versions for different DPIs
   console.log("Optimizing icon.png...");
+
+  // 1x version (40x40)
   await sharp(path.join(publicDir, "icon.png"))
     .resize(40, 40, { fit: "cover" })
     .webp({ quality: 90 })
@@ -16,6 +18,17 @@ async function optimizeImages() {
     .resize(40, 40, { fit: "cover" })
     .png({ quality: 90, compressionLevel: 9 })
     .toFile(path.join(publicDir, "icon-40.png"));
+
+  // 1.5x version (60x60) for high-DPI displays
+  await sharp(path.join(publicDir, "icon.png"))
+    .resize(60, 60, { fit: "cover" })
+    .webp({ quality: 90 })
+    .toFile(path.join(publicDir, "icon-60.webp"));
+
+  await sharp(path.join(publicDir, "icon.png"))
+    .resize(60, 60, { fit: "cover" })
+    .png({ quality: 90, compressionLevel: 9 })
+    .toFile(path.join(publicDir, "icon-60.png"));
 
   // Optimize main-dashboard.png - create responsive versions
   console.log("Optimizing main-dashboard.png...");

@@ -479,12 +479,6 @@ export default function Home() {
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">
-                    Free updates during beta
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">
                     Windows 7/8/10/11 (64-bit) support
                   </span>
                 </li>
@@ -630,7 +624,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/changelog"
+                    href="/blog/v0-2-0-release"
                     className="hover:text-white transition"
                   >
                     Changelog

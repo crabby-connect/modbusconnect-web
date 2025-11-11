@@ -286,36 +286,35 @@ export default function DocsPage() {
               Need More Help?
             </h2>
             <p className="text-gray-700 mb-4">
-              Can't find what you're looking for? Here are some additional
-              resources:
+              Can't find what you're looking for? Check out these resources:
             </p>
             <ul className="space-y-2 text-gray-700">
               <li>
-                <a
-                  href="https://github.com"
+                <Link
+                  href="/blog"
                   className="text-primary-600 hover:underline font-medium"
                 >
-                  GitHub Issues
-                </a>{" "}
-                - Report bugs or request features
-              </li>
-              <li>
-                <a
-                  href="https://github.com"
-                  className="text-primary-600 hover:underline font-medium"
-                >
-                  GitHub Discussions
-                </a>{" "}
-                - Ask questions and share tips
+                  Blog
+                </Link>{" "}
+                - Tutorials and guides
               </li>
               <li>
                 <Link
-                  href="/changelog"
+                  href="/blog/v0-2-0-release"
                   className="text-primary-600 hover:underline font-medium"
                 >
                   Changelog
                 </Link>{" "}
                 - See what's new in each version
+              </li>
+              <li>
+                <a
+                  href="mailto:crabby@modbusconnect.com"
+                  className="text-primary-600 hover:underline font-medium"
+                >
+                  Contact Support
+                </a>{" "}
+                - Get help via email
               </li>
             </ul>
           </div>

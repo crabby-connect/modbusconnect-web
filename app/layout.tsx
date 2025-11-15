@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   authors: [{ name: "Crabby" }],
   creator: "Crabby",
   publisher: "Modbus Connect",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   robots: {
     index: true,
     follow: true,

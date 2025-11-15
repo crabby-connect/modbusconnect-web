@@ -35,12 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# installers (large files)
-public/downloads/*.exe
-public/downloads/*.dmg
-public/downloads/*.AppImage
-public/downloads/*.msi
-public/downloads/*.deb
-public/downloads/*.rpm
-
 .kiro/

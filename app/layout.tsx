@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Modbus Connect - Modern Modbus TCP/IP Monitoring & Scanner Tool",
+  title:
+    "Modbus Connect - Free Professional Modbus TCP/IP Scanner & Monitoring Tool",
   description:
-    "Professional Modbus TCP/IP scanner and real-time monitoring software for industrial automation. Free device discovery, data visualization, and protocol logging for SCADA, PLC, and Modbus devices. Download free beta for Windows.",
+    "Free Professional Modbus TCP/IP scanner and monitoring tool for industrial automation engineers. Discover devices, monitor in real-time, and analyze data—all in one intuitive application.",
   keywords:
-    "Modbus TCP/IP, Modbus scanner, Modbus monitoring tool, industrial automation software, SCADA monitoring, PLC device scanner, Modbus protocol analyzer, real-time data monitoring, Modbus register reader, industrial IoT, automation tools",
+    "Modbus TCP/IP, Modbus scanner, Modbus monitoring tool, industrial automation software, SCADA monitoring, PLC device scanner, Modbus protocol analyzer, real-time data monitoring, Modbus register reader, industrial IoT, automation tools, free Modbus software",
   authors: [{ name: "Crabby" }],
   creator: "Crabby",
   publisher: "Modbus Connect",
@@ -30,9 +31,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://modbusconnect.com",
     siteName: "Modbus Connect",
-    title: "Modbus Connect - Modern Modbus TCP/IP Monitoring & Scanner Tool",
+    title:
+      "Modbus Connect - Free Professional Modbus TCP/IP Scanner & Monitoring Tool",
     description:
-      "Professional Modbus TCP/IP scanner and real-time monitoring software for industrial automation. Free device discovery, data visualization, and protocol logging.",
+      "Free Professional Modbus TCP/IP scanner and monitoring tool for industrial automation engineers. Discover devices, monitor in real-time, and analyze data—all in one intuitive application.",
     images: [
       {
         url: "https://modbusconnect.com/screenshots/main-dashboard.png",
@@ -44,9 +46,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Modbus Connect - Modern Modbus TCP/IP Monitoring & Scanner Tool",
+    title:
+      "Modbus Connect - Free Professional Modbus TCP/IP Scanner & Monitoring Tool",
     description:
-      "Professional Modbus TCP/IP scanner and real-time monitoring software for industrial automation. Download free beta for Windows.",
+      "Free Professional Modbus TCP/IP scanner and monitoring tool for industrial automation engineers. Discover devices, monitor in real-time, and analyze data.",
     images: ["https://modbusconnect.com/screenshots/main-dashboard.png"],
   },
   alternates: {

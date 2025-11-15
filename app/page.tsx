@@ -100,9 +100,10 @@ export default function Home() {
                   Modern Modbus TCP/IP Monitoring Made Simple
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Professional Modbus TCP/IP scanner and monitoring tool for
-                  industrial automation engineers. Discover devices, monitor in
-                  real-time, and analyze data—all in one intuitive application.
+                  Free Professional Modbus TCP/IP scanner and monitoring tool
+                  for industrial automation engineers. Discover devices, monitor
+                  in real-time, and analyze data—all in one intuitive
+                  application.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
@@ -271,28 +272,27 @@ export default function Home() {
               {/* Feature 3 */}
               <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition">
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                  <BarChart3 className="w-6 h-6 text-primary-600" />
+                  <Save className="w-6 h-6 text-primary-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Data Visualization
+                  File Logging Service
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Professional real-time charts with up to 12 data series.
-                  Multiple display formats and custom labeling for better
-                  analysis.
+                  Automatically log register data to files with multiple
+                  formats. Perfect for long-term data collection and compliance.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Real-time charting with zoom/pan</span>
+                    <span>CSV, JSON, Tab-Delimited formats</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Decimal, Hex, Binary formats</span>
+                    <span>Configurable log rotation policies</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Pop-out windows for multi-monitor</span>
+                    <span>Multiple concurrent loggers</span>
                   </li>
                 </ul>
               </div>
@@ -300,27 +300,27 @@ export default function Home() {
               {/* Feature 4 */}
               <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition">
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                  <Save className="w-6 h-6 text-primary-600" />
+                  <BarChart3 className="w-6 h-6 text-primary-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Workspace Management
+                  Per-Register Configuration
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Save and restore complete monitoring sessions. Never lose your
-                  configuration or data.
+                  Advanced per-register settings with scaling, custom units, and
+                  multiple data formats for specialized measurements.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Save/load workspaces</span>
+                    <span>Linear scaling with offset</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Auto-save functionality</span>
+                    <span>30+ unit presets + custom units</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Export/import configurations</span>
+                    <span>8 data format types (Float32, Int32, etc.)</span>
                   </li>
                 </ul>
               </div>
@@ -653,7 +653,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/blog/v0-2-0-release"
+                    href="/changelog"
                     className="hover:text-white transition"
                   >
                     Changelog

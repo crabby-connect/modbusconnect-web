@@ -8,6 +8,7 @@ import {
   CheckCircle2,
   Sparkles,
 } from "lucide-react";
+import Footer from "../../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -571,6 +572,8 @@ export default function V020Release() {
           </div>
         </div>
       </article>
+
+      <Footer />
     </div>
   );
 }

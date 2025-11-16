@@ -30,6 +30,16 @@ const blogPosts = [
   },
   {
     id: 2,
+    title: "Modbus Connect v0.3.1 Hotfix: Bug Fixes & Stability Improvements",
+    excerpt:
+      "Critical hotfix release addressing connection handling, register configuration persistence, chart synchronization, and more. Recommended for all v0.3.0 users.",
+    date: "2025-11-16",
+    readTime: "5 min read",
+    slug: "v0-3-1-release",
+    category: "Product Update",
+  },
+  {
+    id: 3,
     title: "Modbus Connect v0.3.0 Release: Data Logging & Advanced Features",
     excerpt:
       "Discover the latest features in v0.3.0: file logging service, advanced data processor, register configuration, and cross-platform support for Windows, macOS, and Linux.",

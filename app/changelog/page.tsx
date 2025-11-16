@@ -64,8 +64,167 @@ export default function ChangelogPage() {
       {/* Changelog */}
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          {/* v0.3.0 */}
+          {/* v0.3.1 */}
           <div className="bg-white rounded-xl p-8 shadow-sm mb-8 border-l-4 border-green-500">
+            <div className="flex items-start justify-between mb-4">
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-2">
+                  v0.3.1
+                </h2>
+                <div className="flex items-center text-gray-600">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  November 16, 2025
+                </div>
+              </div>
+              <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full font-medium text-sm">
+                Latest
+              </span>
+            </div>
+
+            <div className="prose prose-sm max-w-none">
+              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                New Features
+              </h3>
+
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    Documentation Offset Support
+                  </h4>
+                  <p className="text-gray-700">
+                    Added documentation_offset field in ModbusReader to align
+                    with documentation that starts at register 1 instead of 0.
+                  </p>
+                </div>
+              </div>
+
+              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                Major Fixes
+              </h3>
+
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                  Fixed linear scaling in MonitoringLive by ensuring register
+                  format is set in backend before applying scaling configuration
+                </li>
+                <li>
+                  Fixed register configuration persistence by loading
+                  configurations from backend when session is selected and
+                  marking workspace as modified when configurations are saved
+                </li>
+                <li>
+                  Fixed Modbus connection error handling (error 10053) by
+                  detecting I/O errors and discarding unhealthy connections,
+                  forcing fresh connection creation on next poll
+                </li>
+                <li>
+                  Fixed chart popout synchronization by resetting lastUpdateTime
+                  to include all historical data when initial sync is received
+                  from main window
+                </li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                Minor Fixes
+              </h3>
+
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                  Fixed chart data overlapping between registers by including
+                  address in duplicate detection, preventing data from different
+                  registers with the same timestamp from being skipped
+                </li>
+                <li>
+                  Fixed chart point disabling by updating datasets in-place
+                  instead of replacing them entirely, which preserves Chart.js
+                  internal state for disabled points
+                </li>
+                <li>
+                  Resolved all cargo clippy warnings by removing unused
+                  function, converting single-match to if statement, and
+                  refactoring functions with too many arguments using parameter
+                  structs
+                </li>
+                <li>
+                  Fixed logger not creating new file when logfile is deleted
+                  while logging is active by checking if file exists before
+                  writing and recreating it if necessary
+                </li>
+                <li>
+                  Fixed Create chart menu label editing by restructuring the
+                  modal layout to prevent button click handlers from blocking
+                  input field interactions
+                </li>
+                <li>
+                  Fixed "Keep current devices" checkbox in NewWorkspaceModal to
+                  be checked by default (opt-out instead of opt-in)
+                </li>
+                <li>
+                  Removed redundant HEX/DEC/Binary format buttons from
+                  MonitoringLive and ModbusLogDialog (format selection is now
+                  handled through register configuration)
+                </li>
+                <li>
+                  Fixed start address validation in ModbusReader to allow
+                  address 0 (was incorrectly treating 0 as falsy)
+                </li>
+                <li>
+                  Fixed workspace loading to restore start address and offset in
+                  ModbusReader by saving and loading device formState in
+                  frontend and backend
+                </li>
+                <li>
+                  Fixed DataLoggerManager logging output to include function
+                  code specific register address (e.g., 40001 for holding
+                  registers) by adding register_type to LogEntry and calculating
+                  Modbus address with proper offset
+                </li>
+                <li>
+                  Fixed DataLoggerManager CSV output to include label field by
+                  adding Label column to header, label value to each row, and
+                  passing address labels from MonitoringLive to logging service
+                </li>
+                <li>
+                  Fixed TypeError when clearing workspace by importing
+                  selectedDevice and currentMonitoringSessionId at module level
+                  instead of using dynamic import
+                </li>
+                <li>
+                  Fixed register format not persisting in ModbusLogDialog by
+                  passing registerFormats and processedValues props from
+                  MonitoringLive
+                </li>
+                <li>
+                  Fixed formatted register values not displaying in logging
+                  output by using processed values in ModbusLogDialog preview
+                  mode
+                </li>
+                <li>
+                  Fixed scale factor and offset not getting default values when
+                  enabling custom calculations in RegisterConfigModal for the
+                  first time
+                </li>
+                <li>
+                  Fixed label not loading in RegisterConfigModal after being set
+                  in MonitoringLive by reading directly from addressLabels store
+                  instead of trying to load from backend
+                </li>
+              </ul>
+
+              <div className="mt-6 flex gap-4">
+                <Link
+                  href="/download"
+                  className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
+                >
+                  <Download className="w-4 h-4 mr-1" />
+                  Download
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* v0.3.0 */}
+          <div className="bg-white rounded-xl p-8 shadow-sm mb-8 border-l-4 border-blue-500">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-2">
@@ -76,12 +235,15 @@ export default function ChangelogPage() {
                   November 15, 2025
                 </div>
               </div>
-              <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full font-medium text-sm">
-                Latest
-              </span>
             </div>
 
             <div className="prose prose-sm max-w-none">
+              <p className="text-sm text-gray-600 mb-4">
+                This release introduced major features including file logging
+                service integration, data processor integration, and register
+                configuration with linear scaling.
+              </p>
+
               <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
                 New Features
               </h3>
@@ -249,7 +411,7 @@ export default function ChangelogPage() {
           </div>
 
           {/* v0.2.0 */}
-          <div className="bg-white rounded-xl p-8 shadow-sm mb-8 border-l-4 border-blue-500">
+          <div className="bg-white rounded-xl p-8 shadow-sm mb-8 border-l-4 border-gray-300">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-2">

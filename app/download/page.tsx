@@ -85,17 +85,17 @@ export default function DownloadPage() {
                 Windows 7/8/10/11 (64-bit)
               </p>
               <a
-                href="/downloads/Modbus Connect_0.3.0_x64-setup.exe"
+                href="/downloads/Modbus Connect_0.3.1_x64-setup.exe"
                 className="w-full bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition font-medium flex items-center justify-center"
                 download
-                title="Download Modbus Connect v0.3.0 for Windows"
+                title="Download Modbus Connect v0.3.1 for Windows"
                 aria-label="Download Modbus Connect installer for Windows 64-bit"
               >
                 <Download className="w-5 h-5 mr-2" />
                 Download .exe
               </a>
               <p className="text-xs text-gray-500 text-center mt-3">
-                v0.3.0-beta • ~2.7 MB
+                v0.3.1-beta • ~2.7 MB
               </p>
             </div>
 
@@ -117,17 +117,17 @@ export default function DownloadPage() {
                 Intel & Apple Silicon
               </p>
               <a
-                href="/downloads/Modbus Connect_0.3.0_x64.dmg"
+                href="/downloads/Modbus Connect_0.3.1_x64.dmg"
                 className="w-full bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition font-medium flex items-center justify-center"
                 download
-                title="Download Modbus Connect v0.3.0 for macOS"
+                title="Download Modbus Connect v0.3.1 for macOS"
                 aria-label="Download Modbus Connect DMG for macOS"
               >
                 <Download className="w-5 h-5 mr-2" />
                 Download .dmg
               </a>
               <p className="text-xs text-gray-500 text-center mt-3 mb-3">
-                v0.3.0-beta • ~4.7 MB • Unsigned
+                v0.3.1-beta • ~4.7 MB • Unsigned
               </p>
               <div className="p-3 bg-yellow-50 border border-yellow-200 rounded-lg mt-auto">
                 <p className="text-xs text-yellow-800 leading-relaxed">
@@ -157,20 +157,20 @@ export default function DownloadPage() {
               </p>
               <div className="space-y-2 w-full mb-4">
                 <a
-                  href="/downloads/Modbus Connect-0.3.0.x86_64.rpm"
+                  href="/downloads/Modbus Connect-0.3.1-1.x86_64.rpm"
                   className="w-full bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition font-medium flex items-center justify-center text-sm"
                   download
-                  title="Download Modbus Connect v0.3.0 RPM for Linux"
+                  title="Download Modbus Connect v0.3.1 RPM for Linux"
                   aria-label="Download Modbus Connect RPM package for Linux"
                 >
                   <Download className="w-4 h-4 mr-2" />
                   Download .rpm
                 </a>
                 <a
-                  href="/downloads/Modbus Connect_0.3.0_amd64.deb"
+                  href="/downloads/Modbus Connect_0.3.1_amd64.deb"
                   className="w-full bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition font-medium flex items-center justify-center text-sm"
                   download
-                  title="Download Modbus Connect v0.3.0 DEB for Linux"
+                  title="Download Modbus Connect v0.3.1 DEB for Linux"
                   aria-label="Download Modbus Connect DEB package for Linux"
                 >
                   <Download className="w-4 h-4 mr-2" />
@@ -178,7 +178,7 @@ export default function DownloadPage() {
                 </a>
               </div>
               <p className="text-xs text-gray-500 text-center">
-                v0.3.0-beta • ~5.8 MB
+                v0.3.1-beta • ~5.8 MB
               </p>
             </div>
           </div>

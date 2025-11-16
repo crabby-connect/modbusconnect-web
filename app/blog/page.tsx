@@ -24,7 +24,7 @@ const blogPosts = [
     excerpt:
       "Choosing the right industrial Ethernet protocol significantly impacts machine performance, scalability, cybersecurity, vendor lock-in, and long-term maintenance. Clear breakdown of Modbus TCP, PROFINET, EtherNet/IP, and OPC UA without marketing fluff.",
     date: "2025-11-16",
-    readTime: "18 min read",
+    readTime: "7 min read",
     slug: "modbus-tcp-vs-profinet-ethernetip-opcua",
     category: "Technical Deep Dive",
   },

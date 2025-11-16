@@ -68,8 +68,7 @@ export default function ModbusTcpVsProtocols() {
                 November 16, 2025
               </div>
               <div className="flex items-center">
-                <Clock className="w-4 h-4 mr-1" />
-                18 min read
+                <Clock className="w-4 h-4 mr-1" />7 min read
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

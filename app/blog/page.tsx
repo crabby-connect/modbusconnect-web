@@ -19,6 +19,17 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     id: 1,
+    title:
+      "Modbus TCP vs PROFINET, EtherNet/IP & OPC UA — Definitive 2025 Comparison",
+    excerpt:
+      "Choosing the right industrial Ethernet protocol significantly impacts machine performance, scalability, cybersecurity, vendor lock-in, and long-term maintenance. Clear breakdown of Modbus TCP, PROFINET, EtherNet/IP, and OPC UA without marketing fluff.",
+    date: "2025-11-16",
+    readTime: "18 min read",
+    slug: "modbus-tcp-vs-profinet-ethernetip-opcua",
+    category: "Technical Deep Dive",
+  },
+  {
+    id: 2,
     title: "Modbus Connect v0.3.0 Release: Data Logging & Advanced Features",
     excerpt:
       "Discover the latest features in v0.3.0: file logging service, advanced data processor, register configuration, and cross-platform support for Windows, macOS, and Linux.",
@@ -28,7 +39,7 @@ const blogPosts = [
     category: "Product Update",
   },
   {
-    id: 2,
+    id: 3,
     title:
       "Modbus Protocol Deep Dive: Understanding Frame Structure and Implementation",
     excerpt:
@@ -39,7 +50,7 @@ const blogPosts = [
     category: "Technical Deep Dive",
   },
   {
-    id: 3,
+    id: 4,
     title: "Getting Started with Modbus Connect: A Complete Guide",
     excerpt:
       "Learn how to set up and use Modbus Connect for monitoring your industrial devices. Step-by-step tutorial for beginners.",
@@ -49,7 +60,7 @@ const blogPosts = [
     category: "Tutorial",
   },
   {
-    id: 4,
+    id: 5,
     title: "Understanding Modbus TCP/IP Protocol: A Beginner's Guide",
     excerpt:
       "Comprehensive introduction to Modbus TCP/IP protocol, how it works, and why it's essential for industrial automation.",
@@ -59,7 +70,7 @@ const blogPosts = [
     category: "Technical",
   },
   {
-    id: 5,
+    id: 6,
     title: "Modbus Connect v0.2.0 Release: What's New",
     excerpt:
       "Discover the latest features and improvements in Modbus Connect v0.2.0, including enhanced charting and performance optimizations.",

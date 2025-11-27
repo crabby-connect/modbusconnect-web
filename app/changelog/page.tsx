@@ -64,8 +64,120 @@ export default function ChangelogPage() {
       {/* Changelog */}
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          {/* v0.3.1 */}
+          {/* v0.4.0 */}
           <div className="bg-white rounded-xl p-8 shadow-sm mb-8 border-l-4 border-green-500">
+            <div className="flex items-start justify-between mb-4">
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-2">
+                  v0.4.0
+                </h2>
+                <div className="flex items-center text-gray-600">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  November 27, 2025
+                </div>
+              </div>
+              <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full font-medium text-sm">
+                Latest
+              </span>
+            </div>
+
+            <div className="prose prose-sm max-w-none">
+              <p className="text-sm text-gray-600 mb-4">
+                Complete UI redesign with modern dark theme, improved
+                navigation, and keyboard shortcuts.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                New Features
+              </h3>
+
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    Complete UI Redesign
+                  </h4>
+                  <ul className="list-disc list-inside text-gray-700 space-y-1">
+                    <li>
+                      Modern component styling across all major components
+                    </li>
+                    <li>New OnboardingView with 3-card action layout</li>
+                    <li>Redesigned Sidebar with multi-level dropdown menu</li>
+                    <li>Enhanced dark theme with vibrant, saturated colors</li>
+                    <li>
+                      Consistent modal design with blurry backdrop effects
+                    </li>
+                    <li>
+                      Added lucide-svelte icon library for consistent
+                      iconography
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    Keyboard Navigation & UX
+                  </h4>
+                  <ul className="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Navigation history tracking (Ctrl+2 and Ctrl+3)</li>
+                    <li>Enhanced shortcuts modal with current selections</li>
+                    <li>Escape key closes all modals</li>
+                    <li>Automatic cleanup when devices/sessions deleted</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    Real-Time Status Indicators
+                  </h4>
+                  <ul className="list-disc list-inside text-gray-700 space-y-1">
+                    <li>
+                      Green animated spinner for active monitoring sessions
+                    </li>
+                    <li>
+                      Device latency display in sidebar (auto-updates every 5s)
+                    </li>
+                    <li>Network ping latency display in header</li>
+                    <li>Persistent chart visibility state per session</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                Major Fixes
+              </h3>
+
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>Device scanner now shows TCP connection errors</li>
+                <li>Ping mechanism starts when devices added from scanner</li>
+                <li>Session logging preserved when resuming paused sessions</li>
+                <li>Chart popout data synchronization with batched updates</li>
+                <li>
+                  Centralized device ping management eliminates duplicates
+                </li>
+                <li>Improved responsive design for all screen sizes</li>
+                <li>Better accessibility with focus states and keyboard nav</li>
+              </ul>
+
+              <div className="mt-6 flex gap-4">
+                <Link
+                  href="/blog/v0-4-0-release"
+                  className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
+                >
+                  Read full release notes →
+                </Link>
+                <Link
+                  href="/download"
+                  className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
+                >
+                  <Download className="w-4 h-4 mr-1" />
+                  Download
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* v0.3.1 */}
+          <div className="bg-white rounded-xl p-8 shadow-sm mb-8 border-l-4 border-blue-500">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-2">
@@ -76,142 +188,32 @@ export default function ChangelogPage() {
                   November 16, 2025
                 </div>
               </div>
-              <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full font-medium text-sm">
-                Latest
-              </span>
             </div>
 
             <div className="prose prose-sm max-w-none">
-              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
-                New Features
-              </h3>
-
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">
-                    Documentation Offset Support
-                  </h4>
-                  <p className="text-gray-700">
-                    Added documentation_offset field in ModbusReader to align
-                    with documentation that starts at register 1 instead of 0.
-                  </p>
-                </div>
-              </div>
+              <p className="text-sm text-gray-600 mb-4">
+                Hotfix release addressing critical bugs in connection handling,
+                register configuration, and chart synchronization.
+              </p>
 
               <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
                 Major Fixes
               </h3>
 
               <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>
-                  Fixed linear scaling in MonitoringLive by ensuring register
-                  format is set in backend before applying scaling configuration
-                </li>
-                <li>
-                  Fixed register configuration persistence by loading
-                  configurations from backend when session is selected and
-                  marking workspace as modified when configurations are saved
-                </li>
-                <li>
-                  Fixed Modbus connection error handling (error 10053) by
-                  detecting I/O errors and discarding unhealthy connections,
-                  forcing fresh connection creation on next poll
-                </li>
-                <li>
-                  Fixed chart popout synchronization by resetting lastUpdateTime
-                  to include all historical data when initial sync is received
-                  from main window
-                </li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
-                Minor Fixes
-              </h3>
-
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>
-                  Fixed chart data overlapping between registers by including
-                  address in duplicate detection, preventing data from different
-                  registers with the same timestamp from being skipped
-                </li>
-                <li>
-                  Fixed chart point disabling by updating datasets in-place
-                  instead of replacing them entirely, which preserves Chart.js
-                  internal state for disabled points
-                </li>
-                <li>
-                  Resolved all cargo clippy warnings by removing unused
-                  function, converting single-match to if statement, and
-                  refactoring functions with too many arguments using parameter
-                  structs
-                </li>
-                <li>
-                  Fixed logger not creating new file when logfile is deleted
-                  while logging is active by checking if file exists before
-                  writing and recreating it if necessary
-                </li>
-                <li>
-                  Fixed Create chart menu label editing by restructuring the
-                  modal layout to prevent button click handlers from blocking
-                  input field interactions
-                </li>
-                <li>
-                  Fixed "Keep current devices" checkbox in NewWorkspaceModal to
-                  be checked by default (opt-out instead of opt-in)
-                </li>
-                <li>
-                  Removed redundant HEX/DEC/Binary format buttons from
-                  MonitoringLive and ModbusLogDialog (format selection is now
-                  handled through register configuration)
-                </li>
-                <li>
-                  Fixed start address validation in ModbusReader to allow
-                  address 0 (was incorrectly treating 0 as falsy)
-                </li>
-                <li>
-                  Fixed workspace loading to restore start address and offset in
-                  ModbusReader by saving and loading device formState in
-                  frontend and backend
-                </li>
-                <li>
-                  Fixed DataLoggerManager logging output to include function
-                  code specific register address (e.g., 40001 for holding
-                  registers) by adding register_type to LogEntry and calculating
-                  Modbus address with proper offset
-                </li>
-                <li>
-                  Fixed DataLoggerManager CSV output to include label field by
-                  adding Label column to header, label value to each row, and
-                  passing address labels from MonitoringLive to logging service
-                </li>
-                <li>
-                  Fixed TypeError when clearing workspace by importing
-                  selectedDevice and currentMonitoringSessionId at module level
-                  instead of using dynamic import
-                </li>
-                <li>
-                  Fixed register format not persisting in ModbusLogDialog by
-                  passing registerFormats and processedValues props from
-                  MonitoringLive
-                </li>
-                <li>
-                  Fixed formatted register values not displaying in logging
-                  output by using processed values in ModbusLogDialog preview
-                  mode
-                </li>
-                <li>
-                  Fixed scale factor and offset not getting default values when
-                  enabling custom calculations in RegisterConfigModal for the
-                  first time
-                </li>
-                <li>
-                  Fixed label not loading in RegisterConfigModal after being set
-                  in MonitoringLive by reading directly from addressLabels store
-                  instead of trying to load from backend
-                </li>
+                <li>Fixed Modbus connection error handling (error 10053)</li>
+                <li>Fixed register configuration persistence</li>
+                <li>Fixed linear scaling in MonitoringLive</li>
+                <li>Fixed chart popout synchronization</li>
               </ul>
 
               <div className="mt-6 flex gap-4">
+                <Link
+                  href="/blog/v0-3-1-release"
+                  className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
+                >
+                  Read full release notes →
+                </Link>
                 <Link
                   href="/download"
                   className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"

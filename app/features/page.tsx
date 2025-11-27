@@ -333,6 +333,158 @@ export default function FeaturesPage() {
               </div>
             </div>
 
+            {/* Feature 6: Data Logger */}
+            <div className="mb-24">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="order-2 lg:order-1 rounded-xl shadow-2xl overflow-hidden border border-gray-200">
+                  <Image
+                    src="/screenshots/datalogger.png"
+                    alt="Modbus Connect Data Logger Manager"
+                    width={1920}
+                    height={1080}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="order-1 lg:order-2">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                    File Logging Service
+                  </h2>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Automatically log register data to files with multiple
+                    formats. Perfect for long-term data collection and
+                    compliance.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        CSV, JSON, and Tab-Delimited format support
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Configurable log rotation (Daily, Session, Size-based)
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Multiple concurrent loggers with different configs
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Real-time statistics and maintenance tools
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 7: Device View */}
+            <div className="mb-24">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                    Device Configuration
+                  </h2>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Configure device settings and start monitoring sessions with
+                    an intuitive interface. Real-time latency display keeps you
+                    informed.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Configure IP, port, device ID, and custom names
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Real-time network latency display
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Quick-start monitoring with register type selection
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Documentation offset support for 1-based addressing
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded-xl shadow-2xl overflow-hidden border border-gray-200">
+                  <Image
+                    src="/screenshots/deviceview.png"
+                    alt="Modbus Connect Device Configuration"
+                    width={1920}
+                    height={1080}
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 8: Keyboard Shortcuts */}
+            <div className="mb-24">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="order-2 lg:order-1 rounded-xl shadow-2xl overflow-hidden border border-gray-200">
+                  <Image
+                    src="/screenshots/poweruser_keyboard_shortcuts.png"
+                    alt="Modbus Connect Keyboard Shortcuts"
+                    width={1920}
+                    height={1080}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="order-1 lg:order-2">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                    Power User Keyboard Shortcuts
+                  </h2>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Work faster with comprehensive keyboard shortcuts. Navigate
+                    between devices and sessions without reaching for the mouse.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Quick navigation between views (Ctrl+1-5)
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Navigation history tracking for devices and sessions
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Smart shortcuts modal shows current selections
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Escape key closes all modals consistently
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
             {/* CTA Section */}
             <div className="bg-primary-600 rounded-2xl p-12 text-center">
               <h2 className="text-4xl font-bold text-white mb-4">

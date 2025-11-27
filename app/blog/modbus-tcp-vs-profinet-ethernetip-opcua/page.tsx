@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title:
     "Modbus TCP vs PROFINET, EtherNet/IP & OPC UA — Definitive 2025 Comparison | Modbus Connect",
   description:
-    "Professional comparison of Modbus TCP, PROFINET, EtherNet/IP, and OPC UA industrial protocols. Real-world recommendations for automation engineers choosing the right protocol.",
+    "Professional comparison of Modbus TCP, PROFINET, EtherNet/IP, and OPC UA industrial protocols. Performance benchmarks, security analysis, and real-world recommendations for automation engineers.",
   keywords:
-    "Modbus TCP vs PROFINET, EtherNet/IP comparison, OPC UA vs Modbus, industrial Ethernet protocols, SCADA protocols, PLC communication, industrial automation protocols 2025",
+    "Modbus TCP vs PROFINET, EtherNet/IP comparison, OPC UA vs Modbus, industrial Ethernet protocols 2025, SCADA protocols comparison, PLC communication protocols, industrial automation protocols, PROFINET IRT vs EtherNet/IP, OPC UA IIoT, Modbus TCP performance, industrial protocol selection guide",
   alternates: {
     canonical:
       "https://modbusconnect.com/blog/modbus-tcp-vs-profinet-ethernetip-opcua",
@@ -19,11 +19,19 @@ export const metadata: Metadata = {
     title:
       "Modbus TCP vs PROFINET, EtherNet/IP & OPC UA — Definitive 2025 Comparison",
     description:
-      "Clear, professional breakdown of industrial Ethernet protocols with real-world recommendations for automation engineers.",
+      "Clear, professional breakdown of industrial Ethernet protocols with performance benchmarks, security considerations, and real-world recommendations for automation engineers.",
     url: "https://modbusconnect.com/blog/modbus-tcp-vs-profinet-ethernetip-opcua",
     type: "article",
     publishedTime: "2025-11-16T00:00:00Z",
+    modifiedTime: "2025-11-27T00:00:00Z",
     authors: ["Crabby"],
+    siteName: "Modbus Connect",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Modbus TCP vs PROFINET, EtherNet/IP & OPC UA — 2025 Comparison",
+    description:
+      "Professional breakdown of industrial Ethernet protocols with real-world recommendations for automation engineers.",
   },
 };
 
@@ -813,33 +821,47 @@ export default function ModbusTcpVsProtocols() {
             </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-gray-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+          {/* Related Articles */}
+          <div className="bg-white rounded-xl p-8 shadow-sm mt-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Related Articles
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            </h2>
+            <div className="space-y-4">
+              <Link
+                href="/blog/nis2-modbus-tcp-security"
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+              >
+                <h3 className="font-semibold text-primary-600 mb-1">
+                  NIS2 Is Here: Why Your Modbus TCP Devices Are Now a Legal
+                  Liability
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Learn how to secure Modbus TCP devices for NIS2 compliance
+                  with IEC 62443, TLS encryption, and DPI firewalls.
+                </p>
+              </Link>
               <Link
                 href="/blog/modbus-tcp-ip-explained"
-                className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition"
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
               >
-                <h4 className="font-semibold text-gray-900 mb-2">
-                  Understanding Modbus TCP/IP Protocol
-                </h4>
-                <p className="text-sm text-gray-600">
-                  Complete beginner's guide to Modbus TCP/IP, register types,
-                  function codes, and practical applications.
+                <h3 className="font-semibold text-primary-600 mb-1">
+                  Understanding Modbus TCP/IP: A Complete Guide for Beginners
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Learn the fundamentals of Modbus TCP/IP protocol, register
+                  types, and function codes.
                 </p>
               </Link>
               <Link
                 href="/blog/modbus-protocol-deep-dive"
-                className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition"
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
               >
-                <h4 className="font-semibold text-gray-900 mb-2">
-                  Modbus Protocol Deep Dive
-                </h4>
-                <p className="text-sm text-gray-600">
+                <h3 className="font-semibold text-primary-600 mb-1">
+                  Modbus Protocol Deep Dive: Frame Structure and Implementation
+                </h3>
+                <p className="text-gray-600 text-sm">
                   Technical exploration of Modbus RTU, ASCII, and TCP protocols
-                  with frame structures and implementation details.
+                  with implementation details.
                 </p>
               </Link>
             </div>

@@ -20,6 +20,17 @@ const blogPosts = [
   {
     id: 1,
     title:
+      "NIS2 Is Here: Why Your Modbus TCP Devices Are Now a Legal Liability",
+    excerpt:
+      "The EU's NIS2 Directive mandates strict cybersecurity for industrial operators. Learn how to secure your Modbus TCP infrastructure with DPI firewalls, VPNs, and TLS encryption to avoid regulatory penalties.",
+    date: "2025-11-27",
+    readTime: "10 min read",
+    slug: "nis2-modbus-tcp-security",
+    category: "Compliance & Security",
+  },
+  {
+    id: 2,
+    title:
       "Modbus TCP vs PROFINET, EtherNet/IP & OPC UA — Definitive 2025 Comparison",
     excerpt:
       "Choosing the right industrial Ethernet protocol significantly impacts machine performance, scalability, cybersecurity, vendor lock-in, and long-term maintenance. Clear breakdown of Modbus TCP, PROFINET, EtherNet/IP, and OPC UA without marketing fluff.",
@@ -29,7 +40,7 @@ const blogPosts = [
     category: "Technical Deep Dive",
   },
   {
-    id: 2,
+    id: 3,
     title: "Modbus Connect v0.3.1 Hotfix: Bug Fixes & Stability Improvements",
     excerpt:
       "Critical hotfix release addressing connection handling, register configuration persistence, chart synchronization, and more. Recommended for all v0.3.0 users.",
@@ -39,7 +50,7 @@ const blogPosts = [
     category: "Product Update",
   },
   {
-    id: 3,
+    id: 4,
     title: "Modbus Connect v0.3.0 Release: Data Logging & Advanced Features",
     excerpt:
       "Discover the latest features in v0.3.0: file logging service, advanced data processor, register configuration, and cross-platform support for Windows, macOS, and Linux.",
@@ -49,7 +60,7 @@ const blogPosts = [
     category: "Product Update",
   },
   {
-    id: 3,
+    id: 5,
     title:
       "Modbus Protocol Deep Dive: Understanding Frame Structure and Implementation",
     excerpt:
@@ -60,7 +71,7 @@ const blogPosts = [
     category: "Technical Deep Dive",
   },
   {
-    id: 4,
+    id: 6,
     title: "Getting Started with Modbus Connect: A Complete Guide",
     excerpt:
       "Learn how to set up and use Modbus Connect for monitoring your industrial devices. Step-by-step tutorial for beginners.",
@@ -70,7 +81,7 @@ const blogPosts = [
     category: "Tutorial",
   },
   {
-    id: 5,
+    id: 7,
     title: "Understanding Modbus TCP/IP Protocol: A Beginner's Guide",
     excerpt:
       "Comprehensive introduction to Modbus TCP/IP protocol, how it works, and why it's essential for industrial automation.",
@@ -80,7 +91,7 @@ const blogPosts = [
     category: "Technical",
   },
   {
-    id: 6,
+    id: 8,
     title: "Modbus Connect v0.2.0 Release: What's New",
     excerpt:
       "Discover the latest features and improvements in Modbus Connect v0.2.0, including enhanced charting and performance optimizations.",

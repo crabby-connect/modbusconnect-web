@@ -1,8 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
+import { useState } from "react";
+import { CheckCircle2, Menu, X } from "lucide-react";
 
 export default function FeaturesPage() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
@@ -34,6 +39,7 @@ export default function FeaturesPage() {
                 Modbus Connect
               </span>
             </Link>
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/#features"
@@ -64,8 +70,56 @@ export default function FeaturesPage() {
                 Download Free
               </Link>
             </div>
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileMenuOpen}
+            >
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6 text-gray-600" />
+              ) : (
+                <Menu className="w-6 h-6 text-gray-600" />
+              )}
+            </button>
           </div>
         </div>
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-200">
+            <div className="px-4 py-4 space-y-3">
+              <Link
+                href="/#features"
+                className="block text-gray-600 hover:text-primary-600 transition py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Features
+              </Link>
+              <Link
+                href="/blog"
+                className="block text-gray-600 hover:text-primary-600 transition py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
+              <Link
+                href="/#pricing"
+                className="block text-gray-600 hover:text-primary-600 transition py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Pricing
+              </Link>
+              <Link
+                href="/download"
+                className="block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition font-medium text-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Download Free
+              </Link>
+            </div>
+          </div>
+        )}
       </nav>
 
       <main>

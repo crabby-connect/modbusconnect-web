@@ -154,10 +154,10 @@ export default function Home() {
                   Free Modbus TCP Client, Scanner & Logger
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Download the free Modbus Connect tool—a professional Modbus
-                  TCP Client, Scanner, and Logger in one intuitive interface.
-                  Visualize data and diagnose problems instantly. Built for
-                  industrial automation engineers.
+                  Download the fastest free Modbus TCP Client and Scanner. The
+                  ultimate Modbus TCP Client, Scanner, and Logger in one
+                  intuitive interface. Visualize data and debug problems
+                  instantly.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link

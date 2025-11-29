@@ -18,7 +18,7 @@ export default function StructuredData() {
       priceValidUntil: "2025-12-31",
     },
     description:
-      "Download the free Modbus Connect tool. A professional Modbus TCP Client, Scanner, and Logger in one intuitive interface. Visualize data and diagnose problems instantly for SCADA, PLC, and Modbus devices.",
+      "Download the fastest free Modbus TCP Client and Scanner. The ultimate Modbus TCP Client, Scanner, and Logger in one intuitive interface. Visualize data and debug problems instantly.",
     softwareVersion: "0.4.0-beta",
     datePublished: "2024-01-01",
     dateModified: "2025-11-01",
@@ -69,7 +69,7 @@ export default function StructuredData() {
     name: "Modbus Connect",
     url: "https://modbusconnect.com",
     description:
-      "Free Modbus TCP Client, Scanner & Logger for industrial automation",
+      "Download the fastest free Modbus TCP Client and Scanner. The ultimate Modbus TCP Client, Scanner, and Logger in one intuitive interface.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://modbusconnect.com/?s={search_term_string}",

@@ -151,13 +151,13 @@ export default function Home() {
                   <span>Free During Development</span>
                 </div>
                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                  Modern Modbus TCP/IP Monitoring Made Simple
+                  Free Modbus TCP Client, Scanner & Logger
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Free Professional Modbus TCP/IP scanner and monitoring tool
-                  for industrial automation engineers. Discover devices, monitor
-                  in real-time, and analyze data—all in one intuitive
-                  application.
+                  Download the free Modbus Connect tool—a professional Modbus
+                  TCP Client, Scanner, and Logger in one intuitive interface.
+                  Visualize data and diagnose problems instantly. Built for
+                  industrial automation engineers.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
@@ -256,11 +256,11 @@ export default function Home() {
                 id="features-heading"
                 className="text-4xl font-bold text-gray-900 mb-4"
               >
-                Modbus Monitoring Features
+                Modbus TCP Client & Scanner Features
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Powerful features designed for industrial automation
-                professionals
+                A complete Modbus TCP Client, Scanner, and Logger with powerful
+                features for industrial automation professionals
               </p>
             </div>
 
@@ -271,12 +271,12 @@ export default function Home() {
                   <Search className="w-6 h-6 text-primary-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Smart Device Discovery
+                  Modbus TCP Scanner
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Automatically scan your network and discover Modbus devices
-                  using industry-standard protocols. Get detailed device
-                  information instantly.
+                  Automatically scan your network and discover Modbus TCP
+                  devices using industry-standard protocols. Our Modbus scanner
+                  provides detailed device information instantly.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
@@ -300,12 +300,12 @@ export default function Home() {
                   <Activity className="w-6 h-6 text-primary-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Real-Time Monitoring
+                  Modbus TCP Client
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Monitor multiple devices simultaneously with configurable
-                  polling intervals. Track changes in real-time with visual
-                  highlighting.
+                  A full-featured Modbus TCP Client that monitors multiple
+                  devices simultaneously with configurable polling intervals.
+                  Track changes in real-time with visual highlighting.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
@@ -329,11 +329,12 @@ export default function Home() {
                   <Save className="w-6 h-6 text-primary-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  File Logging Service
+                  Modbus Logger
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Automatically log register data to files with multiple
-                  formats. Perfect for long-term data collection and compliance.
+                  Powerful Modbus Logger that automatically records register
+                  data to files in multiple formats. Perfect for long-term data
+                  collection and compliance.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
@@ -450,10 +451,11 @@ export default function Home() {
                 id="how-it-works-heading"
                 className="text-4xl font-bold text-gray-900 mb-4"
               >
-                How Modbus Connect Works
+                How This Free Modbus Tool Works
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Get started in minutes with our intuitive workflow
+                Get started in minutes—scan, connect, and diagnose problems
+                instantly
               </p>
             </div>
 
@@ -513,11 +515,11 @@ export default function Home() {
                 id="pricing-heading"
                 className="text-4xl font-bold text-gray-900 mb-4"
               >
-                Modbus Connect Pricing
+                Free Modbus TCP Client Pricing
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Get full access during development. Single license for
-                production use.
+                Download the free Modbus tool now. Full access during
+                development with single license for production use.
               </p>
             </div>
 
@@ -578,10 +580,11 @@ export default function Home() {
         <section className="py-20 bg-primary-600">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Simplify Your Modbus Workflow?
+              Download the Free Modbus TCP Client Today
             </h2>
             <p className="text-xl text-primary-100 mb-8">
-              Join automation professionals who are already using Modbus Connect
+              Join automation professionals using this free Modbus tool to scan,
+              log, and diagnose problems instantly
             </p>
             <Link
               href="/download"
@@ -604,7 +607,7 @@ export default function Home() {
               id="contact-heading"
               className="text-4xl font-bold text-gray-900 mb-6"
             >
-              Contact Modbus Connect Support
+              Contact Modbus Connect
             </h2>
             <p className="text-xl text-gray-600 mb-8">
               Have questions or feedback? I'd love to hear from you.

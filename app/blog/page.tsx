@@ -19,6 +19,17 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     id: 1,
+    title:
+      "The Unholy Alliance: Why IEEE 2030.5 and Modbus Are Stuck Together Forever",
+    excerpt:
+      "IEEE 2030.5 won't replace Modbus in DER systems. Learn why the smart grid relies on both protocols, the security risks of the gateway gap, and how to engineer for the translation layer.",
+    date: "2025-12-04",
+    readTime: "10 min read",
+    slug: "ieee-2030-5-vs-modbus-gateway-gap",
+    category: "Smart Grid",
+  },
+  {
+    id: 2,
     title: "Modbus Exception Codes — A Practical Engineer's Guide",
     excerpt:
       "When a device returns a Modbus exception, it's not a communication failure—it's the device telling you exactly why it rejected your request. Learn to interpret these codes and pinpoint root causes in seconds.",
@@ -28,7 +39,7 @@ const blogPosts = [
     category: "Technical Reference",
   },
   {
-    id: 2,
+    id: 3,
     title: "Modbus Connect v0.4.0: Complete UI Redesign & Modern Experience",
     excerpt:
       "A ground-up redesign bringing a modern dark theme, improved navigation, keyboard shortcuts, and a polished user experience across every component.",
@@ -38,7 +49,7 @@ const blogPosts = [
     category: "Product Update",
   },
   {
-    id: 3,
+    id: 4,
     title:
       "NIS2 Is Here: Why Your Modbus TCP Devices Are Now a Legal Liability",
     excerpt:
@@ -49,7 +60,7 @@ const blogPosts = [
     category: "Compliance & Security",
   },
   {
-    id: 4,
+    id: 5,
     title:
       "Modbus TCP vs PROFINET, EtherNet/IP & OPC UA — Definitive 2025 Comparison",
     excerpt:
@@ -60,7 +71,7 @@ const blogPosts = [
     category: "Technical Deep Dive",
   },
   {
-    id: 5,
+    id: 6,
     title: "Modbus Connect v0.3.1 Hotfix: Bug Fixes & Stability Improvements",
     excerpt:
       "Critical hotfix release addressing connection handling, register configuration persistence, chart synchronization, and more. Recommended for all v0.3.0 users.",
@@ -70,7 +81,7 @@ const blogPosts = [
     category: "Product Update",
   },
   {
-    id: 6,
+    id: 7,
     title: "Modbus Connect v0.3.0 Release: Data Logging & Advanced Features",
     excerpt:
       "Discover the latest features in v0.3.0: file logging service, advanced data processor, register configuration, and cross-platform support for Windows, macOS, and Linux.",
@@ -80,7 +91,7 @@ const blogPosts = [
     category: "Product Update",
   },
   {
-    id: 7,
+    id: 8,
     title:
       "Modbus Protocol Deep Dive: Understanding Frame Structure and Implementation",
     excerpt:
@@ -91,7 +102,7 @@ const blogPosts = [
     category: "Technical Deep Dive",
   },
   {
-    id: 8,
+    id: 9,
     title: "Getting Started with Modbus Connect: A Complete Guide",
     excerpt:
       "Learn how to set up and use Modbus Connect for monitoring your industrial devices. Step-by-step tutorial for beginners.",
@@ -101,7 +112,7 @@ const blogPosts = [
     category: "Tutorial",
   },
   {
-    id: 9,
+    id: 10,
     title: "Understanding Modbus TCP/IP Protocol: A Beginner's Guide",
     excerpt:
       "Comprehensive introduction to Modbus TCP/IP protocol, how it works, and why it's essential for industrial automation.",
@@ -111,7 +122,7 @@ const blogPosts = [
     category: "Technical",
   },
   {
-    id: 10,
+    id: 11,
     title: "Modbus Connect v0.2.0 Release: What's New",
     excerpt:
       "Discover the latest features and improvements in Modbus Connect v0.2.0, including enhanced charting and performance optimizations.",
